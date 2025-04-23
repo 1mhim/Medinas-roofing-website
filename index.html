@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medina's Roofing</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Favicon links -->
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="icon/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="icon/favicon-32x32.png" type="image/png" sizes="32x32" />
+    
+    <!-- Additional icons for Apple and Android -->
+    <link rel="apple-touch-icon" href="icon/apple-icon.png" sizes="180x180" />
+    <link rel="icon" href="icon/android-icon-192x192.png" type="image/png" sizes="192x192" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -24,6 +35,8 @@
       }
     </style>
   </head>
+
+
   <body class="text-white relative">
     <div class="overlay"></div>
 
@@ -346,7 +359,7 @@
         class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
       >
         <img
-          src="img/team.jpg"
+          src="img/Team.jpg"
           alt="Team"
           class="w-full md:w-1/2 rounded-xl shadow-md"
         />
@@ -399,6 +412,8 @@
       </div>
     </section>
 
+    <!-- Reviews-->
+
     <section class="bg-gray-50 py-16">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold text-gray-800 mb-8">
@@ -408,6 +423,7 @@
           <!-- Review 1 -->
           <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="font-semibold text-gray-800 mb-4">Robert Blackwood</p>
               <div class="flex items-center justify-center mb-4">
                 <!-- Star Rating -->
                 <div class="flex text-yellow-400">
@@ -471,23 +487,23 @@
               <p class="text-lg italic text-gray-600 mb-4">
                 "Medinas Roofing was one of several estimates to replace me roof
                 in the College area house. Jose was clear what my options were
-                what I needed, what I could do and his estimate was clear and no
-                surprises when the final bill ended up. Showed up when they
-                said. They were fast, added vents were there were not, cleaning
-                up every night and very professional from start to finish. City
-                inspector found not issues, no complaints. Pricing was
-                competitive and did not cut corners and the working men with
-                pleasant, hard working and very quick to keep me aware of any
-                changes or issues or options I might have. Great job, gentlemen.
-                Robert"
+                and what I needed, what I could do and his estimate was clear
+                and no surprises when the final bill ended up. Showed up when
+                they said. They were fast, added vents where there were not,
+                cleaned up every night and very professional from start to
+                finish. City inspector found no issues, no complaints. Pricing
+                was competitive and did not cut corners, and the working men
+                were pleasant, hardworking and very quick to keep me aware of
+                any changes or issues or options I might have. Great job,
+                gentlemen. Robert"
               </p>
-              <p class="font-semibold text-gray-800">- Robert Blackwood</p>
             </div>
           </div>
 
           <!-- Review 2 -->
           <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="font-semibold text-gray-800 mb-4">Jody Amospro</p>
               <div class="flex items-center justify-center mb-4">
                 <!-- Star Rating -->
                 <div class="flex text-yellow-400">
@@ -552,17 +568,17 @@
                 "We hired Medina's Roofing to reroof our home in GROVELAND and
                 we were very happy we did. Jose was great to work with! He was
                 super friendly, knowledgeable, very prompt with quotes and great
-                to communicated with. Jose took care of the county permits for
+                at communicating with. Jose took care of the county permits for
                 us and got the job done on time as promised. I highly recommend
                 Jose and Medina's roofing to everyone."
               </p>
-              <p class="font-semibold text-gray-800">- JODY AMOSPRO</p>
             </div>
           </div>
 
           <!-- Review 3 -->
           <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="font-semibold text-gray-800 mb-4">Jon Gullete</p>
               <div class="flex items-center justify-center mb-4">
                 <!-- Star Rating -->
                 <div class="flex text-yellow-400">
@@ -624,14 +640,10 @@
                 </div>
               </div>
               <p class="text-lg italic text-gray-600 mb-4">
-                "We hired Jose to fix a leak in our roof after a recent rain and
-                windstorm. The high winds damaged some of the shingles and
-                caused a leak inside the house. Jose and his crew came out
-                quickly to address the problem which prevented more damage to
-                the interior of the home. Thank you for quick service and the
-                level of professionalism you and your crew displayed. - Jon"
+                "Jose and his team were awesome! They did an excellent job. I
+                would recommend them to anyone who needs a roof replacement or
+                repair."
               </p>
-              <p class="font-semibold text-gray-800">- Jon Gullete</p>
             </div>
           </div>
         </div>
@@ -674,24 +686,30 @@
     </section>
 
     <!-- Contact -->
+    <!-- Contact -->
     <section id="contact" class="py-16 bg-white bg-opacity-90 text-gray-800">
       <div class="max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <p class="text-lg">
+
+        <!-- Name -->
+        <p class="text-lg font-medium mb-2">Name: Jose Medina</p>
+
+        <p class="text-lg mb-2">
           Email:
           <a
             href="mailto:Medinas213@gmail.com"
             class="text-orange-500 font-medium"
-            >Medinas213@gmail.com</a
           >
+            Medinas213@gmail.com
+          </a>
         </p>
-        <p class="text-lg">
+        <p class="text-lg mb-2">
           Phone:
-          <a href="tel:+12093450922" class="text-orange-500 font-medium"
-            >(209) 345-0922</a
-          >
+          <a href="tel:+12093450922" class="text-orange-500 font-medium">
+            (209) 345-0922
+          </a>
         </p>
-        <p class="text-lg">Address: 2275 Golfito Way, La Grange, CA</p>
+        <p class="text-lg mb-2">Address: 2275 Golfito Way, La Grange, CA</p>
       </div>
     </section>
 
