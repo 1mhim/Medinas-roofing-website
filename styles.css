@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/roof-hero.jpg') center/cover no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.section {
+    padding: 60px 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cards for Services */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about-flex img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Process Steps */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.step {
+    background: #fff;
+    padding: 20px;
+    border-left: 4px solid #ff5722;
+    border-radius: 6px;
+}
+
+/* Reviews */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.review {
+    background: #fff;
+    padding: 20px;
+    border-left: 4px solid #4caf50;
+    border-radius: 6px;
+}
+
+/* Contact */
+.contact a {
+    color: #ff5722;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
