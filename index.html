@@ -1,306 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Medina's Roofing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: url('/img/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: -1;
-    }
-  </style>
-</head>
-<body class="text-white relative">
-  <div class="overlay"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medina's Roofing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: url("/img/background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-color: #777070;
+      }
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body class="text-white relative">
+    <div class="overlay"></div>
 
- 
- <!-- Hero -->
-<section class="relative h-screen flex items-center justify-center text-center px-4">
-    <div class="max-w-2xl">
-   
-      <h1 class="text-4xl md:text-5xl font-extrabold">Central California's Trusted Roofing Experts</h1>
-      <p class="text-lg mt-4">Quality Roofing. Honest Pricing. Professional Service.</p>
-      <p class="text-lg mt-2">Proudly serving Stanislaus, Merced, Mariposa, Tuolumne, and the surrounding counties.</p>
-      <a href="#contact" class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition">Get a Free Estimate</a>
-    </div>
-  </section>
-  <!-- Checklist -->
-<section id="checklist" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8">Is It Time for a New Roof? Ask Yourself...</h2>
-      <ul class="space-y-4 text-lg text-gray-700">
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Are you looking for a trustworthy roofer to give you a roof inspection?
-        </li>
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Do you need an honest roofer to sit down & show you roofing options?
-        </li>
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Thinking it might just be the time to install a new roof on your home?
-        </li>
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Experiencing any obvious roof leaks or dark stains on the ceiling?
-        </li>
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Are you looking for costs on installing a new roof?
-        </li>
-        <li class="flex items-center">
-          <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Looking for roofing companies that can help with an insurance claim?
-        </li>
-      </ul>
-    </div>
-  </section>
-  
-  
-
-  <!-- Services -->
-  <section id="services" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12">Our Services</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow">
-          <img src="/img/Solarpanel.jpg" alt="Solar" class="rounded mb-4 w-full h-40 object-cover">
-          <h3 class="font-semibold text-xl">Solar Panel Cleaning</h3>
-          <p class="mt-2 text-sm text-gray-600">Improve efficiency and extend the life of your panels.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <img src="/img/leak.jpg" alt="leak" class="rounded mb-4 w-full h-40 object-cover">
-          <h3 class="font-semibold text-xl">Roof Repairs and Maintenace</h3>
-          <p class="mt-2 text-sm text-gray-600">We handle everything from small roof repairs to routine maintenance. Whether it's fixing a minor leak, patching up damaged shingles, or sealing gaps, no job is too small for our skilled team.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <img src="/img/reroof.jpg" alt="Re-Roofing" class="rounded mb-4 w-full h-40 object-cover">
-          <h3 class="font-semibold text-xl">Roof Replacement</h3>
-          <p class="mt-2 text-sm text-gray-600">Time for a new roof? We’ve got you covered.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <img src="/img/gutters.jpg" alt="Gutter Replacement" class="rounded mb-4 w-full h-40 object-cover">
-          <h3 class="font-semibold text-xl">Gutter Replacement</h3>
-          <p class="mt-2 text-sm text-gray-600">Ensure proper drainage and prevent water damage.</p>
-        </div>
+    <!-- Hero -->
+    <section
+      class="relative h-screen flex items-center justify-center text-center px-4"
+    >
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold">
+          Central California's Trusted Roofing Experts
+        </h1>
+        <p class="text-lg mt-4">
+          Quality Roofing. Honest Pricing. Professional Service.
+        </p>
+        <p class="text-lg mt-2">
+          Proudly serving Stanislaus, Merced, Mariposa, Tuolumne, and the
+          surrounding counties.
+        </p>
+        <a
+          href="#contact"
+          class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition"
+          >Get a Free Estimate</a
+        >
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Roof Types with Images -->
-<section id="roof-types" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">We Work On All Types of Roofs</h2>
-      <p class="text-lg text-gray-700 mb-10">From traditional homes to modern builds, we’ve got your roof covered—literally.</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
-        
-        <!-- Shingle Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/shingle.jpg" alt="Shingle Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Shingle Roofs</h3>
-            <p class="text-sm text-gray-600">Affordable, durable, and classic — ideal for most homes.</p>
-          </div>
-        </div>
-  
-        <!-- Tile Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/tile.jpg" alt="Tile Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Tile Roofs</h3>
-            <p class="text-sm text-gray-600">Long-lasting and great for hot climates, tile roofs add timeless beauty.</p>
-          </div>
-        </div>
-  
-        <!-- Metal Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/metal.jpg" alt="Metal Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Metal Roofs</h3>
-            <p class="text-sm text-gray-600">Energy-efficient and strong — perfect for durability and modern style.</p>
-          </div>
-        </div>
-  
-        <!-- Flat Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/flat.jpg" alt="Flat Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Flat Roofs</h3>
-            <p class="text-sm text-gray-600">We install and maintain flat roofing systems for homes and businesses.</p>
-          </div>
-        </div>
-  
-        <!-- Commercial Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/industrial.jpg" alt="Commercial Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Commercial Roofs</h3>
-            <p class="text-sm text-gray-600">From warehouses to office buildings, we handle all commercial roofing needs.</p>
-          </div>
-        </div>
-  
-        <!-- Custom Roof -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <img src="/img/weirdroof.jpg" alt="Custom Roof" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="font-semibold text-xl mb-2">Custom & Specialty Roofs</h3>
-            <p class="text-sm text-gray-600">Unique designs? No problem. We tailor solutions to match your vision.</p>
-          </div>
-        </div>
-  
+    <!-- Checklist -->
+    <section id="checklist" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">
+          Is It Time for a New Roof? Ask Yourself...
+        </h2>
+        <ul class="space-y-4 text-lg text-gray-700">
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Are
+            you looking for a trustworthy roofer to perform an inspection?
+          </li>
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Do
+            you need an honest roofer to walk you through your roofing options?
+          </li>
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Are
+            you considering installing a new roof on your home?
+          </li>
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span> Are
+            you noticing obvious roof leaks or dark stains on your ceiling?
+          </li>
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span>
+            Looking for an estimate on a new roof installation?
+          </li>
+          <li class="flex items-center">
+            <span class="text-orange-500 font-semibold mr-4">&#10004;</span>
+            Need help with an insurance claim for your roof?
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
-   
-  <!-- More than just roofing -->
-  <section class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-8 text-black">More Than Just Roofing</h2>
+    </section>
 
-      <p class="mb-10 text-gray-600">
-        We go beyond roofing. Our team is equipped to handle everything from heavy equipment work to detailed home upgrades.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Bobcat Work -->
-        <div class="bg-gray-100 p-4 rounded-2xl shadow">
-          <img src="/img/machinery.jpg" alt="Bobcat Work" class="rounded-xl mb-4 w-full h-40 object-cover">
-          <h3 class="text-xl font-semibold mb-2">Excavation and Earth Movingg</h3>
-          <p class="text-gray-600 text-sm">Clearing land, grading, and heavy-duty landscaping made easy.</p>
-        </div>
-  
-        <!-- Insulation -->
-        <div class="bg-gray-100 p-4 rounded-2xl shadow">
-          <img src="/img/insulation.jpg" alt="Insulation" class="rounded-xl mb-4 w-full h-40 object-cover">
-          <h3 class="text-xl font-semibold mb-2">Insulation</h3>
-          <p class="text-gray-600 text-sm">Improve your home’s energy efficiency and comfort with new insulation.</p>
-        </div>
-  
-        <!-- Home Remodeling -->
-        <div class="bg-gray-100 p-4 rounded-2xl shadow">
-          <img src="/img/inside.jpg" alt="Home Remodeling" class="rounded-xl mb-4 w-full h-40 object-cover">
-          <h3 class="text-xl font-semibold mb-2">Home Remodeling</h3>
-          <p class="text-gray-600 text-sm">Transform your living space with kitchen, bathroom, or full-home remodels.</p>
-        </div>
-  
-        <!-- Exterior Repairs -->
-        <div class="bg-gray-100 p-4 rounded-2xl shadow">
-          <img src="/img/outside.jpg" alt="Exterior Repairs" class="rounded-xl mb-4 w-full h-40 object-cover">
-          <h3 class="text-xl font-semibold mb-2">Exterior Repairs</h3>
-          <p class="text-gray-600 text-sm">From siding to decks and paint, we’ll keep the outside of your home solid.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- About -->
-  <section id="about" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-      <img src="/img/team.jpg" alt="Team" class="w-full md:w-1/2 rounded-xl shadow-md">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Why Choose Medina's Roofing?</h2>
-        <p class="text-lg leading-relaxed text-gray-700">We are a family-owned business committed to quality craftsmanship and customer satisfaction. From small repairs to full roof replacements, we bring honesty, experience, and attention to detail to every job.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-      <div class="grid md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-5xl text-orange-500 font-extrabold mb-2">1</div>
-          <h3 class="font-semibold text-xl mb-2">Contact</h3>
-          <p class="text-sm text-gray-600">Call or email us to schedule a free consultation.</p>
-        </div>
-        <div>
-          <div class="text-5xl text-orange-500 font-extrabold mb-2">2</div>
-          <h3 class="font-semibold text-xl mb-2">Inspection</h3>
-          <p class="text-sm text-gray-600">We’ll assess your roofing needs on-site.</p>
-        </div>
-        <div>
-          <div class="text-5xl text-orange-500 font-extrabold mb-2">3</div>
-          <h3 class="font-semibold text-xl mb-2">Free Estimate</h3>
-          <p class="text-sm text-gray-600">We’ll provide a detailed, no-pressure quote.</p>
-        </div>
-        <div>
-          <div class="text-5xl text-orange-500 font-extrabold mb-2">4</div>
-          <h3 class="font-semibold text-xl mb-2">Project Starts</h3>
-          <p class="text-sm text-gray-600">Once approved, we’ll get to work quickly.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-gray-50 py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-gray-800 mb-8">What Our Customers Are Saying</h2>
-      <div class="flex flex-wrap justify-center gap-8">
-        <!-- Review 1 -->
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-center justify-center mb-4">
-              <!-- Star Rating -->
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-              </div>
+    <!-- Services -->
+    <section id="services" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Our Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          >
+            <div class="aspect-[4/3] mb-4">
+              <img
+                src="/img/Solarpanel.jpg"
+                alt="Solar"
+                class="rounded-xl w-full h-full object-cover"
+              />
             </div>
-            <p class="text-lg italic text-gray-600 mb-4">"Great experience, very professional and timely service."</p>
-            <p class="font-semibold text-gray-800">- John D., Tuolumne</p>
-            <p class="text-sm text-gray-500">December 12, 2024</p>
+            <h3 class="font-semibold text-xl">Solar Panel Cleaning</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Improve efficiency and extend the life of your panels.
+            </p>
           </div>
-        </div>
-        
-        <!-- Review 2 -->
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-center justify-center mb-4">
-              <!-- Star Rating -->
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="fill-current"><path d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z" /></svg>
-              </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          >
+            <div class="aspect-[4/3] mb-4">
+              <img
+                src="/img/leak.jpg"
+                alt="leak"
+                class="rounded-xl w-full h-full object-cover"
+              />
             </div>
-            <p class="text-lg italic text-gray-600 mb-4">"The team was quick and efficient. My roof looks great now!"</p>
-            <p class="font-semibold text-gray-800">- Sarah T., Merced</p>
-            <p class="text-sm text-gray-500">December 9, 2024</p>
+            <h3 class="font-semibold text-xl">Roof Repairs and Maintenance</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              We handle everything from small roof repairs to routine
+              maintenance. Whether it's fixing a minor leak, patching up damaged
+              shingles, or sealing gaps, no job is too small for our skilled
+              team.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          >
+            <div class="aspect-[4/3] mb-4">
+              <img
+                src="/img/reroof.jpg"
+                alt="Re-Roofing"
+                class="rounded-xl w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-semibold text-xl">Roof Replacement</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Time for a new roof? We’ve got you covered.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          >
+            <div class="aspect-[4/3] mb-4">
+              <img
+                src="/img/gutters.jpg"
+                alt="Gutter Replacement"
+                class="rounded-xl w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-semibold text-xl">Gutter Replacement</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Ensure proper drainage and prevent water damage.
+            </p>
           </div>
         </div>
-  
-        <!-- Add more reviews as needed -->
       </div>
-    </div>
-  </section>
- 
-  
- 
+    </section>
 
-  
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white bg-opacity-90 text-gray-800">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-      <p class="text-lg">Email: <a href="mailto:Medinas213@gmail.com" class="text-orange-500 font-medium">Medinas213@gmail.com</a></p>
-      <p class="text-lg">Phone: <a href="tel:+12093450922" class="text-orange-500 font-medium">(209) 345-0922</a></p>
-      <p class="text-lg">Address: 2275 Golfito Way</p>
-    </div>
-  </section>
+    <!-- Roof Types with Images -->
+    <section id="roof-types" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">We Work On All Types of Roofs</h2>
+        <p class="text-lg text-gray-700 mb-10">
+          From traditional homes to modern builds, we’ve got your roof
+          covered—literally.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+          <!-- Shingle Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/shingle.jpg"
+              alt="Shingle Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">Shingle Roofs</h3>
+              <p class="text-sm text-gray-600">
+                Affordable, durable, and classic — ideal for most homes.
+              </p>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer class="bg-black bg-opacity-80 text-white py-6 text-center">
-    <p>&copy; 2025 Medina's Roofing. All rights reserved.</p>
-  </footer>
-</body>
+          <!-- Tile Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/tile.jpg"
+              alt="Tile Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">Tile Roofs</h3>
+              <p class="text-sm text-gray-600">
+                Long-lasting and great for hot climates, tile roofs add timeless
+                beauty.
+              </p>
+            </div>
+          </div>
+
+          <!-- Metal Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/metal.jpg"
+              alt="Metal Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">Metal Roofs</h3>
+              <p class="text-sm text-gray-600">
+                Energy-efficient and strong — perfect for durability and modern
+                style.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flat Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/flat.jpg"
+              alt="Flat Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">Flat Roofs</h3>
+              <p class="text-sm text-gray-600">
+                We install and maintain flat roofing systems for homes and
+                businesses.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commercial Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/industrial.jpg"
+              alt="Commercial Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">Commercial Roofs</h3>
+              <p class="text-sm text-gray-600">
+                From warehouses to office buildings, we handle all commercial
+                roofing needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Custom Roof -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="/img/weirdroof.jpg"
+              alt="Custom Roof"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-semibold text-xl mb-2">
+                Custom & Specialty Roofs
+              </h3>
+              <p class="text-sm text-gray-600">
+                Unique designs? No problem. We tailor solutions to match your
+                vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More than just roofing -->
+    <section class="py-12 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center text-black">
+        <h2 class="text-3xl font-bold mb-8">More Than Just Roofing</h2>
+
+        <p class="mb-10">
+          Our team goes beyond roofing and is equipped to handle everything from
+          heavy equipment work to detailed home upgrades. If you can think of
+          it, we can most likely do it.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Bobcat Work -->
+          <div class="bg-gray-100 p-4 rounded-2xl shadow text-black">
+            <img
+              src="/img/machinery.jpg"
+              alt="Bobcat Work"
+              class="rounded-xl mb-4 w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">
+              Excavation and Earth Moving
+            </h3>
+            <p class="text-sm">
+              Clearing land, grading, and heavy-duty landscaping made easy.
+            </p>
+          </div>
+
+          <!-- Insulation -->
+          <div class="bg-gray-100 p-4 rounded-2xl shadow text-black">
+            <img
+              src="/img/insulation.jpg"
+              alt="Insulation"
+              class="rounded-xl mb-4 w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Insulation</h3>
+            <p class="text-sm">
+              Improve your home’s energy efficiency and comfort with new
+              insulation.
+            </p>
+          </div>
+
+          <!-- Home Remodeling -->
+          <div class="bg-gray-100 p-4 rounded-2xl shadow text-black">
+            <img
+              src="/img/inside.jpg"
+              alt="Home Remodeling"
+              class="rounded-xl mb-4 w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Home Remodeling</h3>
+            <p class="text-sm">
+              Transform your living space with kitchen, bathroom, or full-home
+              remodels.
+            </p>
+          </div>
+
+          <!-- Exterior Repairs -->
+          <div class="bg-gray-100 p-4 rounded-2xl shadow text-black">
+            <img
+              src="/img/outside.jpg"
+              alt="Exterior Repairs"
+              class="rounded-xl mb-4 w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Exterior Repairs</h3>
+            <p class="text-sm">
+              From siding to decks and paint, we’ll keep the outside of your
+              home solid.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div
+        class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+      >
+        <img
+          src="/img/team.jpg"
+          alt="Team"
+          class="w-full md:w-1/2 rounded-xl shadow-md"
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Why Choose Medina's Roofing?</h2>
+          <p class="text-lg leading-relaxed text-gray-700">
+            We are a family-owned business committed to quality craftsmanship
+            and customer satisfaction. From small repairs to full roof
+            replacements, we bring honesty, experience, and attention to detail
+            to every job.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-5xl text-orange-500 font-extrabold mb-2">1</div>
+            <h3 class="font-semibold text-xl mb-2">Contact</h3>
+            <p class="text-sm text-gray-600">
+              Call or email us to schedule a free consultation.
+            </p>
+          </div>
+          <div>
+            <div class="text-5xl text-orange-500 font-extrabold mb-2">2</div>
+            <h3 class="font-semibold text-xl mb-2">Inspection</h3>
+            <p class="text-sm text-gray-600">
+              We’ll assess your roofing needs on-site.
+            </p>
+          </div>
+          <div>
+            <div class="text-5xl text-orange-500 font-extrabold mb-2">3</div>
+            <h3 class="font-semibold text-xl mb-2">Free Estimate</h3>
+            <p class="text-sm text-gray-600">
+              We’ll provide a detailed, no-pressure quote.
+            </p>
+          </div>
+          <div>
+            <div class="text-5xl text-orange-500 font-extrabold mb-2">4</div>
+            <h3 class="font-semibold text-xl mb-2">Project Starts</h3>
+            <p class="text-sm text-gray-600">
+              Once approved, we’ll get to work quickly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8">
+          What Our Customers Are Saying
+        </h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- Review 1 -->
+          <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="flex items-center justify-center mb-4">
+                <!-- Star Rating -->
+                <div class="flex text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="text-lg italic text-gray-600 mb-4">
+                "Medinas Roofing was one of several estimates to replace me roof
+                in the College area house. Jose was clear what my options were
+                what I needed, what I could do and his estimate was clear and no
+                surprises when the final bill ended up. Showed up when they
+                said. They were fast, added vents were there were not, cleaning
+                up every night and very professional from start to finish. City
+                inspector found not issues, no complaints. Pricing was
+                competitive and did not cut corners and the working men with
+                pleasant, hard working and very quick to keep me aware of any
+                changes or issues or options I might have. Great job, gentlemen.
+                Robert"
+              </p>
+              <p class="font-semibold text-gray-800">- Robert Blackwood</p>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="flex items-center justify-center mb-4">
+                <!-- Star Rating -->
+                <div class="flex text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="text-lg italic text-gray-600 mb-4">
+                "We hired Medina's Roofing to reroof our home in GROVELAND and
+                we were very happy we did. Jose was great to work with! He was
+                super friendly, knowledgeable, very prompt with quotes and great
+                to communicated with. Jose took care of the county permits for
+                us and got the job done on time as promised. I highly recommend
+                Jose and Medina's roofing to everyone."
+              </p>
+              <p class="font-semibold text-gray-800">- JODY AMOSPRO</p>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="flex items-center justify-center mb-4">
+                <!-- Star Rating -->
+                <div class="flex text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.09-1.64-6.91L21 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l4.46 4.21-1.64 6.91L12 17.27z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="text-lg italic text-gray-600 mb-4">
+                "We hired Jose to fix a leak in our roof after a recent rain and
+                windstorm. The high winds damaged some of the shingles and
+                caused a leak inside the house. Jose and his crew came out
+                quickly to address the problem which prevented more damage to
+                the interior of the home. Thank you for quick service and the
+                level of professionalism you and your crew displayed. - Jon"
+              </p>
+              <p class="font-semibold text-gray-800">- Jon Gullete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Request Template -->
+    <section
+      id="quote-request"
+      class="py-16 bg-white bg-opacity-90 text-gray-800"
+    >
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Request a Quote</h2>
+        <p class="text-lg">
+          To request a quote, click the link below to automatically fill in your
+          email client:
+        </p>
+
+        <a
+          href="mailto:Medinas213@gmail.com?subject=Quote Request for Roofing Services&body=Dear Medina's Roofing,%0D%0A%0D%0AHere are my details:%0D%0A%0D%0AName: [Your Name]%0D%0AEmail: [Your Email]%0D%0APhone: [Your Phone Number]%0D%0AAddress: [Your Address]%0D%0ADescription of Work: [Brief description of the work you need done, such as 'Roof inspection' or 'New roof installation']%0D%0ABest time for Medina's Roofing to come look at my home: [Your preferred time and Date]%0D%0A%0D%0APlease let me know the next steps and if you need any further information.%0D%0A%0D%0AThank you,%0D%0A[Your Name]"
+          class="w-full py-2 bg-orange-500 text-white font-semibold rounded"
+          >Click Here to Request a Quote</a
+        >
+
+        <p class="text-sm text-gray-600 mt-4">
+          Clicking the link will open your default email client with the details
+          filled in. Replace the placeholders (e.g., [Your Name]) with your
+          information.
+        </p>
+
+        <p class="text-lg mt-6">
+          If you prefer, you can also give us a call directly at:
+        </p>
+        <p class="text-lg">
+          <a href="tel:+12093450922" class="text-orange-500 font-medium"
+            >(209) 345-0922</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white bg-opacity-90 text-gray-800">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="text-lg">
+          Email:
+          <a
+            href="mailto:Medinas213@gmail.com"
+            class="text-orange-500 font-medium"
+            >Medinas213@gmail.com</a
+          >
+        </p>
+        <p class="text-lg">
+          Phone:
+          <a href="tel:+12093450922" class="text-orange-500 font-medium"
+            >(209) 345-0922</a
+          >
+        </p>
+        <p class="text-lg">Address: 2275 Golfito Way, La Grange, CA</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-80 text-white py-6 text-center">
+      <p>&copy; 2025 Medina's Roofing. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
